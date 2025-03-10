@@ -1,6 +1,21 @@
 *{
     margin: 0;
+    padding: 0;
 }
+
+/* importar Fuente*/
+@font-face {
+    font-family: 'Cali';
+    src: url('../assets/fonts/Cagliostro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Clases para los colores*/
+.color-item{
+    color: #3E532D;
+}
+
 
 /*Fondo*/
 body{
@@ -8,6 +23,36 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100vw; /* Ancho del viewport */
-    height: 100vh; /* Alto del viewport */
+    background-attachment: fixed;
+    width: 100vw; 
+    height: 100vh; 
+} 
+
+/* barra de navegacion*/
+.navbar-brand {
+    font-family: Cali;
+    
 }
+
+.nav-item{
+    font-family: Cali;
+}
+
+/*estilo para las opciones de la barra (a)*/
+.nav-link {
+    display: inline-block !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    color: #4F6228; 
+    font-family: 'Cali', sans-serif !important;
+}
+/*Para cuando el puntero sobre una opcion en la barra(a)*/
+a.nav-link:hover{
+    background-color: #DDE6C2;
+    border-radius: 9px;
+    display: inline-block !important; /* Hace que el fondo solo ocupe el tamaño del texto */
+    padding: 0.5rem 1rem; /* Ajusta el padding a tu gusto */
+}
+
+
